@@ -1,0 +1,23 @@
+@use '../../partials/variables' as *;
+
+.grid{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    z-index: -1;
+
+    &__square{
+        box-sizing: border-box;
+        height: 2vw;
+        width: 2vw;
+        background-color: white;
+        border: 1px solid $off-white;
+        margin: 0;
+        padding: 0;
+    }
+}
