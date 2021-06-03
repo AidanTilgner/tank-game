@@ -1,5 +1,9 @@
 @use './partials/mixins' as *;
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   @include hideScrollbar
 }

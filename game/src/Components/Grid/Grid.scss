@@ -10,11 +10,12 @@
     justify-content: flex-start;
     overflow: hidden;
     z-index: -1;
+    position: fixed;
 
     &__square{
         box-sizing: border-box;
-        height: 2vw;
-        width: 2vw;
+        height: $grid-space;
+        width: $grid-space;
         background-color: white;
         border: 1px solid $off-white;
         margin: 0;

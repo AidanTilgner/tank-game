@@ -1,0 +1,26 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.ui{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+
+    &__stats{
+        position: absolute;
+        width: calc(#{$grid-space} * 8);
+        height: calc(#{$grid-space} * 10);
+        left: $grid-space;
+        top: $grid-space;
+        border: 1.5px solid $off-black;
+        border-radius: 5px;
+        background-color: rgba($color: $light-grey, $alpha: .6);
+        opacity: .7;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
