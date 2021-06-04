@@ -1,9 +1,16 @@
 @use './partials/mixins' as *;
+@use './partials//variables' as *;
 
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
-  @include hideScrollbar
+    @include hideScrollbar;
+    background-size: $grid-space $grid-space;
+    background-image:
+    linear-gradient(to right, $off-white 2px, transparent 1px),
+    linear-gradient(to bottom, $off-white 2px, transparent 1px);
+    height: 10000px;
+    width: 10000px;
 }

@@ -1,0 +1,26 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.level-1-basic{
+    position: relative;
+
+    &__body{
+        height: calc(#{$grid-space} * 3);
+        width: calc(#{$grid-space} * 3);
+        background-color: $red;
+        border-radius: 50%;
+        border: 4px solid $dark-red;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__barrel{
+        width: calc(#{$grid-space} * 2.5);
+        height: calc(#{$grid-space} * 1.5);
+        background-color: #a3a3a3;
+        position: absolute;
+        left: calc(#{$grid-space} * 2);
+        bottom: calc(#{$grid-space} * .75);
+        border: 2px solid #868686;
+    }
+}
