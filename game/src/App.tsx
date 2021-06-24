@@ -4,6 +4,7 @@ import React from 'react';
 //components
 import UI from './Components/UI/UI'
 import Player from './Components/Player/Player'
+import Bullet from './Components/Bullet/Bullet'
 
 //files
 import './App.scss';

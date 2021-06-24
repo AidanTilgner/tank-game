@@ -1,0 +1,11 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.bullet{
+    position: relative;
+    width: calc(#{$grid-space} * 1.5);
+    height: calc(#{$grid-space} * 1.5);
+    background-color: $red;
+    border-radius: 50%;
+    border: 2px solid $dark-red;
+}

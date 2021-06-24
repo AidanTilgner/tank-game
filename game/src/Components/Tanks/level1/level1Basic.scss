@@ -1,5 +1,5 @@
-@use '../../partials/variables' as *;
-@use '../../partials/mixins' as *;
+@use '../../../partials/variables' as *;
+@use '../../../partials/mixins' as *;
 
 .level-1-basic{
     position: relative;
@@ -8,6 +8,8 @@
         height: calc(#{$grid-space} * 3);
         width: calc(#{$grid-space} * 3);
         background-color: $red;
+        background-image: url('../../../assets/images/james-at-da-beach.jpg');
+        background-size: contain;
         border-radius: 50%;
         border: 4px solid $dark-red;
         position: relative;
@@ -22,5 +24,6 @@
         left: calc(#{$grid-space} * 2);
         bottom: calc(#{$grid-space} * .75);
         border: 2px solid #868686;
+        border-radius: 4px;
     }
 }
